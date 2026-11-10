@@ -1,0 +1,27 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [develop]
+  push:
+    branches: [develop]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Test the mechanical checks
+        run: python3 -m unittest discover scripts -v
+      - name: Check the skill's front matter
+        run: |
+          head -5 SKILL.md | grep -qx 'name: cafe-s-framework-skill'
+          head -5 SKILL.md | grep -qx 'license: MIT'
