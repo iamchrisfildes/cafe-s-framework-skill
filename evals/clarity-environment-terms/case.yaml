@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: clarity-environment-terms
+expected_outcome: |
+  The review report flags the environment terms in deploy-spec.md ("local development" and
+  "production", lines 5 and 7) as clarity findings, because the document never gives an exact
+  environment name. Each finding cites a line. The report asks the author which exact environment
+  values are meant. It gives no score.
+context:
+  scaffold_script: place-files.sh
