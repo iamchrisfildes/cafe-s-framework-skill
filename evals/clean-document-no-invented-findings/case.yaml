@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: clean-document-no-invented-findings
+expected_outcome: |
+  backup-runbook.md is clear, actionable, current and safe. The review report says it found nothing
+  that would make an agent act wrongly, or lists at most minor findings, and does not invent problems.
+  It gives no score.
+context:
+  scaffold_script: place-files.sh

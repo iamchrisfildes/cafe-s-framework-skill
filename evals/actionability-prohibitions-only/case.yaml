@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: actionability-prohibitions-only
+expected_outcome: |
+  The review report flags release-skill.md for actionability: it lists only prohibitions and never
+  says what the agent should do or when the release is done (negative-constraint fragility and a
+  missing finish line). Findings cite lines. It gives no score.
+context:
+  scaffold_script: place-files.sh
