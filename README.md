@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/banner.png" alt="CAFE(S) Framework Review: Review Your Agent Context For Clarity, Actionability, Fidelity, Efficiency And Security"></p>
+
 # CAFE(S) Context Review
 
 `cafe-s-framework-skill` is an agent skill that reviews context written for AI agents against the five CAFE(S) properties: **clarity, actionability, fidelity, efficiency and security**. You run it on demand, when you're building an agentic workflow and want to know whether the text your agents read will make them act as you intend.
@@ -85,6 +87,7 @@ references/review-brief.md       the reviewer's brief: questions, context smells
 references/cafe-s-summary.md     the framework in brief, for people
 scripts/check_context.py         mechanical checks
 scripts/test_check_context.py    their tests: python3 -m unittest discover scripts
+assets/banner.png                README banner image
 ```
 
 ## Credit
